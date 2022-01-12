@@ -66,6 +66,7 @@
   border: 1px solid grey;
   background-color: white;
   display: flex;
+  justify-content: space-around;
   padding: 20px;
 }
 
@@ -79,12 +80,19 @@
 }
 
 .itemCardInfo {
-  display: flex;
-  flex-direction: column;
+  width: 60%;
 }
 
 .itemCardPhoto {
-  margin-right: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  min-width: 200px;
+}
+
+.itemPriceTag {
+  text-align: center;
 }
 
 .addProduct {
@@ -200,7 +208,7 @@
   }
 }
 
-@media only screen and (max-width: 1500px) {
+@media only screen and (max-width: 1300px) {
   .itemCard {
     margin-top: 0px;
     border-radius: 0%;

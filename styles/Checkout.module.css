@@ -38,7 +38,7 @@
     background-color: white;
     text-align: center;
     font-family: 'Mochiy Pop One', sans-serif;
-    padding : 20px;
+    padding : 15px;
 }
 
 .customerDataHeader {
@@ -60,16 +60,12 @@
     padding-bottom: 100px;
 }
 
-.customerDataInputs label {
-    font-size: 30px;
-    font-family: 'Mochiy Pop One', sans-serif;
-}
 
 .customerDataInputs input {
     padding: 10px;
-    margin: 10px;
+    margin: 5px;
     width: 45%;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .submit h1 {
@@ -98,14 +94,21 @@
 
 .basketItemCardInfo {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    
+    min-width: 40%;
+    width: 40%;
+}
+
+.basketItemCardPhoto {
+    width: 30%;
+    min-width: 100px;
 }
 
 .basketItemCardInfo h1 {
     font-family: 'Mochiy Pop One', sans-serif;
-    font-size: 15px;
+    font-size: 25px;
     margin: 0;
     text-align: center;
 }
@@ -117,8 +120,8 @@
     cursor: pointer;
     background-color: black;
     width: 50px;
+    margin: 0px 40px;
     height: 50px;
-    margin-left: 20px;
     border-radius: 100%;
 }
 
@@ -127,6 +130,8 @@
 }
 
 .removeBtnContainer {
+    width: 30%;
+    min-width: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -137,10 +142,11 @@
     font-size: 15px;
     text-align: center;
     font-family: 'Mochiy Pop One', sans-serif;
+    background-color: white;
 }
 
 
-@media only screen and (max-width: 1500px) {
+@media only screen and (max-width: 1100px) {
     .checkout {
       width: 100%;
     }
@@ -163,16 +169,8 @@
         padding: 0;
     }
 
-    .basketItemCardInfo {
-        flex-direction: column;
-    }
-
     .basketItemCard {
-        justify-content: center;
-    }
-
-    .removeBtn {
-        margin-left: 0;
+        justify-content: space-between;
     }
 
     .basketItemCardInfo h1 {
@@ -180,12 +178,16 @@
     }
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 500px) {
     .basketItemCard {
         justify-content: space-between;
     }
 
     .basketItemCardInfo h1 {
-        font-size: 20px;
+        font-size: 16px;
+    }
+
+    .removeBtn {
+        margin: 0;
     }
 }

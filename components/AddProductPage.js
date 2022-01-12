@@ -7,11 +7,11 @@ import 'react-toastify/dist/ReactToastify.css';
 function AddProductPage(props) {
 
     const [price, setPrice] = useState(props.currentProduct.priceSmall)
-    const [size, setSize] = useState(0)
+    const [size, setSize] = useState(null)
 
     function updateSize(e) {
         setPrice(Number(e.target.value))
-        setSize(e.target.selectedIndex)
+        setSize(e.target.options[e.target.selectedIndex].text)
     }
 
     function addToBasket() {
@@ -44,9 +44,9 @@ function AddProductPage(props) {
             <div className={styles.pickSize}>
                 <h3>Wybierz rozmiar</h3>
                 <select onChange={(e)=>{updateSize(e)}} id={styles.pickSizeMenu}>
-                    <option value={props.currentProduct.priceSmall}>Mały</option>
-                    <option value={props.currentProduct.priceMedium}>Średni</option>
-                    <option value={props.currentProduct.priceBig}>Duży</option>
+                    <option value={props.currentProduct.priceSmall}>{props.currentProduct.smallSize}</option>
+                    <option value={props.currentProduct.priceMedium}>{props.currentProduct.mediumSize}</option>
+                    <option value={props.currentProduct.priceBig}>{props.currentProduct.bigSize}</option>
             </select>
             </div>
             <div className={styles.price}>
