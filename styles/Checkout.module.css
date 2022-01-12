@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Source+Serif+Pro&display=swap');
+
+
+.checkout {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    height: 100vh;
+    margin: auto;
+    background-color: white;
+}
+
+.header h1 {
+    margin-top: 0px;
+    padding-top: 10px;
+    text-align: center;
+    font-family: 'Mochiy Pop One', sans-serif;
+}
+
+.header hr {
+    width: 100%;
+}
+
+.checkout hr {
+    width: 100%;
+}
+
+.item h1 {
+    color: red;
+}
+
+.emptyBasket {
+    padding: 20px;
+}
+
+.emptyBasket h1 {
+    margin: 0;
+    background-color: white;
+    text-align: center;
+    font-family: 'Mochiy Pop One', sans-serif;
+    padding : 20px;
+}
+
+.customerDataHeader {
+    background-color: black;
+}
+
+.customerDataHeader h1 {
+    margin: 0;
+    padding: 20px;
+    font-family: 'Mochiy Pop One', sans-serif;
+    text-align: center;
+    color: white;
+}
+
+.customerDataInputs {
+    background-color: white;
+    padding-top: 20px;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.customerDataInputs label {
+    font-size: 30px;
+    font-family: 'Mochiy Pop One', sans-serif;
+}
+
+.customerDataInputs input {
+    padding: 10px;
+    margin: 10px;
+    width: 45%;
+    font-size: 25px;
+}
+
+.submit h1 {
+    text-align: center;
+    font-family: 'Mochiy Pop One', sans-serif;
+    color: white;
+    margin: 0;
+}
+
+.submit {
+    position: fixed;
+    bottom: 0;
+    width: 45%;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: black;
+    cursor: pointer;
+}
+
+.basketItemCard {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: white;
+}
+
+.basketItemCardInfo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.basketItemCardInfo h1 {
+    font-family: 'Mochiy Pop One', sans-serif;
+    font-size: 15px;
+    margin: 0;
+    text-align: center;
+}
+
+.removeBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+    border-radius: 100%;
+}
+
+.removeBtn h1 {
+    color: white;
+}
+
+.removeBtnContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.priceToPay {
+    padding: 20px;
+    font-size: 15px;
+    text-align: center;
+    font-family: 'Mochiy Pop One', sans-serif;
+}
+
+
+@media only screen and (max-width: 1500px) {
+    .checkout {
+      width: 100%;
+    }
+
+    .customerDataInputs {
+        padding-bottom: 50px;
+    }
+
+    .submit {
+        margin-top: 0;
+        position: relative;
+        width: 100%;
+    }
+
+    .submit h1 {
+        margin: 0;
+    }
+
+    .emptyBasket h1 {
+        padding: 0;
+    }
+
+    .basketItemCardInfo {
+        flex-direction: column;
+    }
+
+    .basketItemCard {
+        justify-content: center;
+    }
+
+    .removeBtn {
+        margin-left: 0;
+    }
+
+    .basketItemCardInfo h1 {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .basketItemCard {
+        justify-content: space-between;
+    }
+
+    .basketItemCardInfo h1 {
+        font-size: 20px;
+    }
+}

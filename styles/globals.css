@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@500&display=swap');
+
+html,
+body {
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: gainsboro;
+  }
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+hr {
+  height: 0px;
+  border-top: 1px;
+  border-color: darkgrey;
+  margin: 0 auto;
+  width: 45%;
+}
+
+h3 {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+p {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+@media only screen and (max-width: 1500px) {
+  ::-webkit-scrollbar {
+    width: 0; 
+    background: transparent;
+  }
+
+  hr {
+    width: 100%;
+  }
+}
+
+

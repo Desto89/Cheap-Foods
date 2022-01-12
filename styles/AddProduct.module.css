@@ -1,0 +1,74 @@
+.addProductPage {
+    display: flex;
+    flex-direction: column;
+}
+
+.backButton {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.backIcon {
+    cursor: pointer;
+    transform: scale(1.8);
+}
+
+.productInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.productInfo h3 {
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.addToBasketBtn {
+    border-radius: 12px;
+    margin: 10px auto;
+    cursor: pointer;
+    width: 40%;
+    background-color: black;
+}
+
+.addToBasketBtn h3 {
+    margin: 20px;
+    text-align: center;
+    color: white;
+    font-size: 35px;
+}
+
+.pickSize {
+    margin: auto;
+}
+
+.pickSize h3 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+#pickSizeMenu {
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+    width: 100%
+}
+
+.price {
+    margin-top: 20px;
+}
+
+.price h3 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+@media only screen and (max-width: 1500px) {
+    .addToBasketBtn {
+      width: 70%;
+    }
+}

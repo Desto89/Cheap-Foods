@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Source+Serif+Pro&display=swap');
+
+
+.header {
+  background-color: white;
+  margin: auto;
+  width: 45%;
+  height: 12vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 60px 20px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header h1 {
+  margin-left: 5px;
+  font-family: 'Mochiy Pop One', sans-serif;
+}
+
+.navIcon {
+  cursor: pointer;
+  transform: scale(1.6);
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  margin: auto;
+  width: 45%;
+  background-color: white;
+  padding: 0px 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  -webkit-box-shadow: 0px 15px 24px -16px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 0px 15px 24px -16px rgba(66, 68, 90, 1);
+  box-shadow: 0px 15px 24px -16px rgba(66, 68, 90, 1);
+}
+
+.navbarBtn h3 {
+  letter-spacing: 2px;
+  font-size: 25px;
+}
+
+.navbarBtn h3:hover {
+  color: grey;
+  cursor: pointer;
+}
+
+.products {
+  padding: 5px;
+  height: auto;
+  margin: auto;
+  width: 45%;
+}
+
+.itemCard {
+  cursor: pointer;
+  border: 1px solid grey;
+  background-color: white;
+  display: flex;
+  padding: 20px;
+}
+
+.itemCardInfo h3 {
+  font-size: 40px;
+}
+
+.itemCardInfo p {
+  margin: 0;
+  font-size: 30px;
+}
+
+.itemCardInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.itemCardPhoto {
+  margin-right: 50px;
+}
+
+.addProduct {
+  z-index: 100;
+  background-color: white;
+  position:fixed;
+  top: 0;
+  right: 27.5%;
+  height: 100vh;
+  width: 0%;
+}
+
+.help {
+  z-index: 100;
+  background-color: white;
+  position:fixed;
+  top: 0;
+  left: 27.5%;
+  height: 100vh;
+  width: 0%;
+}
+
+
+.helpInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.helpInfoCredentials h3 {
+  text-align: center;
+  font-size: 40px;
+}
+
+.backButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.backIcon {
+  color: black;
+  cursor: pointer;
+  transform: scale(1.8);
+}
+
+.addProductSlideIn {
+  animation: slideIn 0.1s;
+  animation-fill-mode: forwards; 
+}
+
+.helpSlideIn {
+  animation: helpSlideIn 0.1s;
+  animation-fill-mode: forwards; 
+}
+
+.cardBtn {
+  margin-left: 170px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.priceTag {
+  background-color: black;
+  width: 45%;
+  margin: auto;
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+.priceTag h3 {
+  margin: 0;
+  padding: 30px;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+}
+
+.cardBtn h3 {
+  cursor:pointer;
+  font-size: 25px;
+}
+
+.productsHeader {
+  margin: 0;
+  background-color: black;
+  font-size: 35px;
+  text-align: center;
+  padding: 15px;
+}
+
+.productsHeader h3 {
+  color: white;
+  margin: 0;
+}
+
+@keyframes slideIn {
+  to {
+    display: flex;
+    width: 45%;
+  }
+}
+
+@keyframes helpSlideIn {
+  to {
+    display: flex;
+    width: 45%;
+  }
+}
+
+@media only screen and (max-width: 1500px) {
+  .itemCard {
+    margin-top: 0px;
+    border-radius: 0%;
+  }
+
+  .priceTag {
+    width: 100%;
+  }
+
+  .logo h1 {
+    font-size: 25px;
+  }
+
+  .help {
+    left: 0;
+  }
+
+  .addProduct {
+    right: 0;
+  }
+
+  .navIcon {
+    transform: scale(1.4);
+  }
+  
+  .products {
+    width: 100%;
+    padding: 0;
+  }
+
+  .navbar {
+    padding: 20px 0px 10px;
+    width: 100%;
+    overflow: auto;
+  }
+
+
+  .navbarBtn h3 {
+    padding: 0px 10px;
+    text-align: center;
+    width: 170px;
+    letter-spacing: 0px;
+    font-size: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .header {
+    width: 100%;
+    padding: 20px 20px 20px
+  }
+
+  .itemCardInfo h3 {
+    font-size: 30px;
+  }
+
+  .itemCardInfo p {
+    font-size: 25px;
+  }
+
+  @keyframes slideIn {
+    to {
+      display: flex;
+      width: 100%;
+    }
+  }
+
+  @keyframes helpSlideIn {
+    to {
+      display: flex;
+      width: 100%;
+    }
+  }
+
+}
