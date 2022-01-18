@@ -19,6 +19,7 @@ function Checkout() {
             })
         setItems(arr)
        }
+
        let prc = localStorage.getItem('cheapfoodsPrice')
        setCurrPrice((prc * 1).toFixed(2))
     }, [])
@@ -41,6 +42,12 @@ function Checkout() {
         setItems(dummyArr)
         let priceToRemove = items[index].price
         setCurrPrice((currPrice -= priceToRemove).toFixed(2))
+    }
+
+    function sendUserData() {
+        if (items.length !== 0) {
+            document.getElementById('sbmt').click()
+        }
     }
 
     return (
@@ -93,7 +100,7 @@ function Checkout() {
                     <h1>Dane odbiorcy</h1>
                 </div>
                 <div className={styles.customerDataInputs}>
-                <form action="/checkout" method="post">
+                <form action="/api/checkout" method="post">
                     <input type="text" id="fname" name="fname" placeholder='Imię' required />
                     <input type="text" id="lname" name="lname" placeholder='Nazwisko' required/><br />
                     <input style={{width: 'calc(90% + 10px)'}} type="text" id="adres" name="adres" placeholder='Adres' required/><br />
@@ -102,10 +109,11 @@ function Checkout() {
                     <input style={{width: 'calc(90% + 10px)'}} type="text" id="numer" name="numer" placeholder='Numer telefonu' required/><br />
                     <input style={{width: 'calc(90% + 10px)'}} type="email" id="email" name="email" placeholder='Email' required/><br />
                     <input id='sbmt' style={{display:'none'}} type="submit" value="Submit" />
+                    <input id='items' style={{display:'none'}} type='text' name='items' value={JSON.stringify(items)} />
                 </form>
                 </div>
             </div>
-            <div onClick={()=>{document.getElementById('sbmt').click()}} className={styles.submit}>
+            <div onClick={()=>{sendUserData()}} className={styles.submit}>
                 <h1>Zamów</h1>
             </div>
             

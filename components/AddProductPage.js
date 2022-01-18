@@ -7,11 +7,11 @@ import 'react-toastify/dist/ReactToastify.css';
 function AddProductPage(props) {
 
     const [price, setPrice] = useState(props.currentProduct.priceSmall)
-    const [size, setSize] = useState(null)
+    const [size, setSize] = useState(props.currentProduct.smallSize)
 
     function updateSize(e) {
         setPrice(Number(e.target.value))
-        setSize(e.target.options[e.target.selectedIndex].text)
+        setSize(String(e.target.options[e.target.selectedIndex].text))
     }
 
     function addToBasket() {
