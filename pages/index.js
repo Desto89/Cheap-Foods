@@ -165,7 +165,7 @@ export default function Home(props) {
       </div>
     }
     <Link href='/checkout'><div className={styles.priceTag}>
-      <h3>Koszyk: {price.toFixed(2)} zł</h3>
+      <h1>Koszyk : {price.toFixed(2)} zł</h1>
     </div></Link>
     </div>
   )

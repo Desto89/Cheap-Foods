@@ -1,6 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Source+Serif+Pro&display=swap');
+
 .successPage {
     background-color: white;
     height: 100vh;
     width: 45%;
     margin: auto;
+}
+
+.successPage h1 {
+    text-align: center;
+    margin: 0;
+    padding-top: 45vh;
+    font-family: 'Mochiy Pop One', sans-serif;
+}
+
+.backBtn {
+    padding: 30px;
+    position: fixed;
+    bottom: 0;
+    width: 45%;
+    cursor: pointer;
+    background-color: black;
+}
+
+.backBtn h1 {
+    padding: 0;
+    color: white;
+}
+
+@media only screen and (max-width: 1300px) {
+    .successPage {
+        width: 100%;
+    }
+
+    .backBtn {
+        width: 100%;
+    }
+
+    .successPage h1 {
+        padding-top: 40vh;
+    }
+
+    .backBtn h1 {
+        padding: 0px;
+    }
 }
